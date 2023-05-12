@@ -1,0 +1,7 @@
+{
+  "name": "strategy-design-pattern",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
