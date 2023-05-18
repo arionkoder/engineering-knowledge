@@ -9,6 +9,14 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title> Arionkoder - Platano Power </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button [routerLink]="['/settings']">
+        <ion-icon slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+      <ion-button [routerLink]="['/settings-strategy']">
+        <ion-icon slot="icon-only" name="hammer"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
