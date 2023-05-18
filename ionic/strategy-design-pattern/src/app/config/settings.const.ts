@@ -1,13 +1,13 @@
 import { PasswordComponent } from '../password/password.component';
 
-export type SettingType = 'link' | 'modal' | 'page';
+export type SettingType = 'link' | 'modal' | 'page' | 'toast';
 export interface SettingModel {
   id: SettingId;
   label: string;
   type: SettingType;
 }
 
-export type SettingId = 'account' | 'password' | 'website';
+export type SettingId = 'account' | 'password' | 'website' | 'reminder';
 
 export const SETTINGS: SettingModel[] = [
   {
@@ -19,6 +19,11 @@ export const SETTINGS: SettingModel[] = [
     id: 'password',
     label: 'Password',
     type: 'modal',
+  },
+  {
+    id: 'reminder',
+    label: 'Reminder',
+    type: 'toast',
   },
   {
     id: 'website',
