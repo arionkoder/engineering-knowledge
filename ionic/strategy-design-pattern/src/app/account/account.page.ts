@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './account.page.html',
   styleUrls: ['./account.page.scss'],
 })
-export class AccountPage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class AccountPage {
+  user = {
+    name: 'John Doe',
+    email: 'johndoe@example.com',
+    phone: '1234567890',
+    address: '123 Main St, City, Country',
+    avatar: 'https://example.com/avatar.png',
+  };
 }

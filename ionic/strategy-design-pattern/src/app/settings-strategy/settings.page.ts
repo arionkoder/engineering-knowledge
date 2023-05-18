@@ -12,7 +12,7 @@ import { LinkActionStrategy } from '../strategies/link-action.strategy';
   templateUrl: './settings.page.html',
   styleUrls: ['./settings.page.scss'],
 })
-export class SettingsPage implements OnInit {
+export class SettingsPage {
   onSettingClick = (setting: Setting) => setting.executeAction();
 
   settings: Setting[] = [];
@@ -31,5 +31,4 @@ export class SettingsPage implements OnInit {
     });
   }
 
-  ngOnInit() {}
 }
