@@ -1,0 +1,45 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">This is the menu content.</ion-content>
+</ion-menu>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Arionkoder - Platano Power </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button [routerLink]="['/settings']">
+        <ion-icon slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+      <ion-button [routerLink]="['/settings-strategy']">
+        <ion-icon slot="icon-only" name="hammer"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Arionkoder - Platano Power</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong
+      >Angular Guild: Applying the Strategy Design Pattern to build a settings
+      page on Ionic</strong
+    >
+    <p>
+      Start with Ionic
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://ionicframework.com/docs/components"
+        >UI Components</a
+      >
+    </p>
+  </div>
+</ion-content>
