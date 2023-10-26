@@ -6,6 +6,7 @@ const {
 module.exports = withModuleFederationPlugin({
   remotes: {
     // Modules to import
+    "remoteapp1": "http://localhost:4002/remoteEntry.js",
   },
 
   shared: {
