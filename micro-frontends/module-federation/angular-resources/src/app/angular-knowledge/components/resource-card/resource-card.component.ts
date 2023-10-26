@@ -5,7 +5,7 @@ import { imageSuffixOptions } from './image-suffix-options';
 @Component({
   selector: 'app-resource-card',
   templateUrl: './resource-card.component.html',
-  styleUrls: ['./resource-card.component.scss']
+  styleUrls: ['./resource-card.component.scss'],
 })
 export class ResourceCardComponent {
   @Input() public resource!: Partial<Resource>;
