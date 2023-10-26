@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"shell": {
+		"angular-resources": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
@@ -17,7 +17,7 @@
 				"build": {
 					"builder": "ngx-build-plus:browser",
 					"options": {
-						"outputPath": "dist/shell",
+						"outputPath": "dist/angular-resources",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": [
@@ -30,7 +30,7 @@
 							"src/assets"
 						],
 						"styles": [
-              "@angular/material/prebuilt-themes/indigo-pink.css",
+							"@angular/material/prebuilt-themes/indigo-pink.css",
 							"src/styles.scss"
 						],
 						"scripts": [],
@@ -69,24 +69,24 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "shell:build:production",
+							"browserTarget": "angular-resources:build:production",
 							"extraWebpackConfig": "webpack.prod.config.js"
 						},
 						"development": {
-							"browserTarget": "shell:build:development"
+							"browserTarget": "angular-resources:build:development"
 						}
 					},
 					"defaultConfiguration": "development",
 					"options": {
-						"port": 4001,
-						"publicHost": "http://localhost:4001",
+						"port": 4002,
+						"publicHost": "http://localhost:4002",
 						"extraWebpackConfig": "webpack.config.js"
 					}
 				},
 				"extract-i18n": {
 					"builder": "ngx-build-plus:extract-i18n",
 					"options": {
-						"browserTarget": "shell:build",
+						"browserTarget": "angular-resources:build",
 						"extraWebpackConfig": "webpack.config.js"
 					}
 				},
@@ -104,7 +104,7 @@
 							"src/assets"
 						],
 						"styles": [
-              "@angular/material/prebuilt-themes/indigo-pink.css",
+							"@angular/material/prebuilt-themes/indigo-pink.css",
 							"src/styles.scss"
 						],
 						"scripts": []
