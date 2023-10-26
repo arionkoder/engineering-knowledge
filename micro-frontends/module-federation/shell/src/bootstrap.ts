@@ -1,7 +1,9 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
+// main.ts
 import { AppModule } from './app/app.module';
+import { bootstrap } from '@angular-architects/module-federation-tools';
+import { environment } from './environments/environment';
 
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+bootstrap(AppModule, {
+  production: environment.production,
+  appType: 'shell',
+});
