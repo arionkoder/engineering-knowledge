@@ -1,0 +1,21 @@
+<mat-card class="mat-elevation-z4">
+  <mat-card-header>
+    <mat-card-title>{{resource.name}}</mat-card-title>
+  </mat-card-header>
+  <img
+    [height]="200"
+    [width]="400"
+    mat-card-image
+    src="https://source.unsplash.com/1600x900/?{{imageSuffix}}"
+  />
+  <mat-card-content>
+    <p>{{ resource.channel }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <ul>
+     <li *ngFor="let link of resource.links">
+       <a href="{{ link }}" target="_blank">{{ link }}</a>
+     </li>
+   </ul>
+   </mat-card-actions>
+</mat-card>

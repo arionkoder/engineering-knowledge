@@ -1,0 +1,42 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+  // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+  // List of extensions which should be recommended for users of this workspace.
+  "recommendations": [
+    "Angular.ng-template",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "dbaeumer.jshint",
+    "dbaeumer.vscode-eslint",
+    "DotJoshJohnson.xml",
+    "eamodio.gitlens",
+    "ecmel.vscode-html-css",
+    "EditorConfig.EditorConfig",
+    "eg2.vscode-npm-script",
+    "esbenp.prettier-vscode",
+    "fivethree.vscode-ionic-snippets",
+    "formulahendry.auto-rename-tag",
+    "ghaschel.vscode-angular-html",
+    "hardikpthv.NgRxSnippets",
+    "henoc.svgeditor",
+    "HookyQR.beautify",
+    "johnpapa.angular-essentials",
+    "johnpapa.Angular2",
+    "kisstkondoros.vscode-gutter-preview",
+    "lihui.vs-color-picker",
+    "mhutchie.git-graph",
+    "michelemelluso.code-beautifier",
+    "nicoespeon.abracadabra",
+    "nrwl.angular-console",
+    "obenjiro.arrr",
+    "oouo-diogo-perdigao.docthis",
+    "PKief.material-icon-theme",
+    "quicktype.quicktype",
+    "rbbit.typescript-hero",
+    "richie5um2.vscode-sort-json",
+    "sasa.vscode-sass-format",
+    "SumitSaha.learn-with-sumit-theme",
+    "vivaxy.vscode-conventional-commits",
+    "waderyan.gitblame"
+  ],
+}

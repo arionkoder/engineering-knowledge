@@ -1,0 +1,23 @@
+<div class="knowledge-list">
+  <h1> .Net Guild's Resources</h1>
+
+  <ng-container *ngIf="knowledgeList$ | async as knowledgeList">
+    <ng-container *ngFor="let medium of knowledgeList | keyvalue ">
+      <div class="column">
+        <h2>{{medium.key | titlecase}}</h2>
+      </div>
+      <ng-container *ngFor="let lang of medium.value | keyvalue">
+        <div class="column">
+          <h2>{{lang.key | titlecase }}</h2>
+        </div>
+        <section #primary class="section">
+          <app-resource-card
+            *ngFor="let resource of lang.value"
+            [resource]="resource">
+          </app-resource-card>
+        </section>
+      </ng-container>
+
+    </ng-container>
+  </ng-container>
+</div>

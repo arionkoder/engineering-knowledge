@@ -1,0 +1,17 @@
+.knowledge-list {
+  padding: 16px;
+
+  .column {
+    flex: 1;
+  }
+
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 40px;
+
+    & > * {
+      padding: 20px;
+    }
+  }
+}

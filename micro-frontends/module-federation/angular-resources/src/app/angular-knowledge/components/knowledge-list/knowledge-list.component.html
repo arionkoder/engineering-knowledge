@@ -1,0 +1,23 @@
+<div class="knowledge-list">
+  <h1> Angular Guild's Resources</h1>
+  <ng-container *ngIf="knowledgeList$ | async as knowledgeList">
+    <div class="column">
+      <h2>Primary Resources</h2>
+    </div>
+    <section #primary class="section">
+      <app-resource-card
+        *ngFor="let resource of knowledgeList.primary_resources"
+        [resource]="resource">
+    </app-resource-card>
+    </section>
+    <div class="column">
+      <h2>Additional Resources</h2>
+    </div>
+    <section #secondary class="section">
+      <app-resource-card
+        *ngFor="let resource of knowledgeList.secondary_resources"
+        [resource]="resource">
+      </app-resource-card>
+    </section>
+  </ng-container>
+</div>
